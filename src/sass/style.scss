@@ -3,18 +3,41 @@
   font-family: "Robotto_500";
   src: url("../static/Roboto/Roboto-Medium.ttf");
 }
+@font-face {
+  font-family: "Robotto_regular";
+  src: url("../static/Roboto/Roboto-Regular.ttf");
+}
 
 body {
-  background: red;
   font-family: "Robotto_500";
-  display: flex;
-  justify-content: center;
+  text-align: center;
   h1 {
     font-size: 2rem;
     letter-spacing: 1px;
     margin-top: 4rem;
   }
-  .container {
-    border: 1px solid black;
+}
+
+.container {
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: auto;
+  height: auto;
+  .coin-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    width: 8rem;
+    margin: 2rem;
+    font-family: "Robotto_regular";
+    font-size: 1.4rem;
+    cursor: pointer;
+    > * {
+      padding: 0.3rem;
+    }
   }
 }
