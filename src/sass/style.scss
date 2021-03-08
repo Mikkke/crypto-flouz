@@ -1,0 +1,20 @@
+@import "./reset.scss";
+@font-face {
+  font-family: "Robotto_500";
+  src: url("../static/Roboto/Roboto-Medium.ttf");
+}
+
+body {
+  background: red;
+  font-family: "Robotto_500";
+  display: flex;
+  justify-content: center;
+  h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin-top: 4rem;
+  }
+  .container {
+    border: 1px solid black;
+  }
+}
